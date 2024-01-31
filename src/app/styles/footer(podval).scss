@@ -1,0 +1,37 @@
+.footer {
+  padding: 16px 0 20px 0;
+  border-top: 1px solid $color-stroke-turquoise;
+
+  &__information {
+    width: 90%;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 94%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 35px;
+    }
+  }
+
+  &__info-text {
+    text-align: center;
+    color: text-color-main-grey;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    opacity: 0.7218;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 768px) {
+      text-align: start;
+      max-width: 33.3%;
+      &:last-child {
+        text-align: end;
+      }
+    }
+  }
+} 

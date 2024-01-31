@@ -24,6 +24,7 @@ module.exports = {
   },
   output: {
     path: defines.dist,
+    publicPath: defines.public,
     // if you need hash:
     // filename: `${defines.assets}js/[name].[contenthash].js`
     // if you don't need hash:
@@ -190,10 +191,10 @@ module.exports = {
 
         // others:
         // `shared/fonts` to `dist/static/fonts`
-        // {
-        //   from: `${defines.src}/shared/fonts`,
-        //   to: `${defines.dist}/${defines.static}/fonts`
-        // },
+        {
+          from: `${defines.src}/shared/fonts`,
+          to: `${defines.dist}/${defines.static}/fonts`
+        },
 
         // misc
         // `shared/misc` to `dist/`

@@ -1,0 +1,219 @@
+.section-main {
+  margin-bottom: 24px;
+
+  &__title {
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1120px) {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 32px 32px 0;
+      align-items: center;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 8.37px;
+    }
+  }
+
+  &__navigation {
+    margin: 0 16px 32px 16px;
+
+    @media (min-width: 768px) {
+      margin-left: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      margin-left: 32px;
+    }
+  }
+
+  &__navigation-list {
+    display: flex;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (min-width: 1120px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      width: 95%;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    height: 134.5px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    gap: 10px;
+    max-width: 90%;
+    color: $text-color-main-black;
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 23.9px;
+    letter-spacing: 0.2px;
+  }
+
+  &__button {
+    margin: 0 0 16px 0;
+    display: flex;
+    gap: 8px;
+    width: 140px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+
+  &__button-svg-arrows {
+    &--hide {
+      transform: rotate(180deg);
+      transition-duration: 0.2s;
+    }
+  }
+
+  &__button-text {
+    color: $text-color-main-black;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img-1 {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 768px) {
+      border-radius: 10px;
+      width: 360px;
+      height: 208px;
+    }
+
+    @media (min-width: 1440px) {
+      border-radius: 10px;
+      width: 532px;
+      height: 308px;
+    }
+  }
+}
+
+.navigation-list {
+  &__item {
+    border: 2px solid transparent;
+    color: $text-color-main-grey;
+    white-space: nowrap;
+    padding: 8px 16.67px 8px 16.67px;
+
+    &:focus,
+    &:hover {
+      background-color: $color-white;
+      border-radius: 6px;
+      border-color: $color-stroke-turquoise;
+    }
+  }
+
+  &__button {
+    color: $text-color-main-grey;
+    font-size: 16px;
+  }
+}
+
+.title-part1 {
+  &__heading {
+    color: $text-color-main-black;
+    font-family: TT Lakes;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    padding: 24px 16px 0 16px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 40px;
+      width: 4px;
+      left: 0;
+      background-color: $color-main-turquoise;
+      border-radius: 0px 10px 10px 0px;
+    }
+
+    @media (min-width: 768px) {
+      padding-left: 24px;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 42px 0 0 32px;
+
+      &::before {
+        left: 320px;
+      }
+    }
+  }
+}
+
+.title-part2 {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__button-text {
+    color: $text-color-main-black;
+    text-align: right;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  &__button {
+    @media (min-width: 1120px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      margin-top: 42px;
+
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+      }
+    }
+  }
+}

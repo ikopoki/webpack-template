@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
 // scss imports can be here (local files only):
-@import './body.scss';
-@import './fonts.scss';
+
 @import './background-white.scss';
-@import './color.scss';
+@import './body.scss';
+@import './brands.scss';
+@import './fonts.scss';
 @import './footer\(podval\).scss';
 @import './header.scss';
+@import './main.scss';
 @import './modal.scss';
-@import './brands.scss';
+@import './prices.scss';
+@import './sidebar.scss';
+@import './sviperr.scss';
+@import './type.scss';

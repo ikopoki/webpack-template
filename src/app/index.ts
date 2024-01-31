@@ -1,2 +1,3 @@
 // core app styles:
-import './index.scss'
+import './index.scsс'
+import { defineSwiper, baseSettings } from './swiper'

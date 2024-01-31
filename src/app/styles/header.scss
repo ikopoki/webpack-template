@@ -5,8 +5,8 @@
 }
 
 .header {
-  background: $color-white;
-  border-bottom: 2px solid $color-secondary-turquoise;
+  background: #fff;
+  border-bottom: 2px solid #d9fff5;
 
   @media (min-width: 1440px) {
     display: none;
@@ -20,7 +20,7 @@
       position: relative;
       top: 0px;
       height: 32px;
-      border: 2px solid $color-stroke-grey;
+      border: 2px solid #eaeaea;
     }
   }
 
@@ -45,7 +45,7 @@
       position: relative;
       content: '';
       height: 32px;
-      border: 2px solid $color-stroke-grey;
+      border: 2px solid #eaeaea;
       top: 0px;
     }
     @media (min-width: 768px) {
@@ -71,7 +71,7 @@
         position: relative;
         content: '';
         height: 32px;
-        border: 2px solid $color-stroke-grey;
+        border: 2px solid #eaeaea;
         top: 3px;
       }
     }

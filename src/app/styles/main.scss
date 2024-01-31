@@ -73,7 +73,7 @@
     transition: height 0.5s ease;
     gap: 10px;
     max-width: 90%;
-    color: $text-color-main-black;
+    color: #1b1c21;
     font-family: TT Lakes;
     font-size: 14px;
     line-height: 23.9px;
@@ -100,7 +100,7 @@
   }
 
   &__button-text {
-    color: $text-color-main-black;
+    color: #1b1c21;
     font-family: TT Lakes;
     font-size: 16px;
     line-height: 24px;
@@ -133,27 +133,27 @@
 .navigation-list {
   &__item {
     border: 2px solid transparent;
-    color: $text-color-main-grey;
+    color: #7e7e82;
     white-space: nowrap;
     padding: 8px 16.67px 8px 16.67px;
 
     &:focus,
     &:hover {
-      background-color: $color-white;
+      background-color: #fff;
       border-radius: 6px;
-      border-color: $color-stroke-turquoise;
+      border-color: #b8ffec;
     }
   }
 
   &__button {
-    color: $text-color-main-grey;
+    color: #7e7e82;
     font-size: 16px;
   }
 }
 
 .title-part1 {
   &__heading {
-    color: $text-color-main-black;
+    color: #1b1c21;
     font-family: TT Lakes;
     font-size: 28px;
     line-height: 40px;
@@ -166,7 +166,7 @@
       height: 40px;
       width: 4px;
       left: 0;
-      background-color: $color-main-turquoise;
+      background-color: #41f6d7;
       border-radius: 0px 10px 10px 0px;
     }
 
@@ -193,7 +193,7 @@
   }
 
   &__button-text {
-    color: $text-color-main-black;
+    color: #1b1c21;
     text-align: right;
     font-family: TT Lakes;
     font-size: 16px;

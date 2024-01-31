@@ -1,0 +1,93 @@
+.section {
+  &__all-content {
+    min-width: 320px;
+  }
+}
+
+.header {
+  background: $color-white;
+  border-bottom: 2px solid $color-secondary-turquoise;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+
+  &__divider {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      content: '';
+      position: relative;
+      top: 0px;
+      height: 32px;
+      border: 2px solid $color-stroke-grey;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 88px;
+    @media (min-width: 768px) {
+      width: 95%;
+    }
+  }
+
+  &__button-part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    &::after {
+      position: relative;
+      content: '';
+      height: 32px;
+      border: 2px solid $color-stroke-grey;
+      top: 0px;
+    }
+    @media (min-width: 768px) {
+      gap: 18px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__button-part2 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__button-item-connection {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 16px;
+      &::after {
+        position: relative;
+        content: '';
+        height: 32px;
+        border: 2px solid $color-stroke-grey;
+        top: 3px;
+      }
+    }
+  }
+
+  &__button-item {
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+      transition: 0.2s;
+    }
+  }
+}
+
+.header__button-part1 > .header__button-item:nth-child(2) {
+  @media (min-width: 768px) {
+    margin-left: 16px;
+  }
+}

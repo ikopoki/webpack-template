@@ -184,10 +184,10 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         // `shared/img` to `dist/static/img`
-        {
-          from: `${defines.src}/shared/img`,
-          to: `${defines.dist}/${defines.static}/img`
-        },
+        //{
+        //  from: `${defines.src}/shared/img`,
+        //  to: `${defines.dist}/${defines.static}/img`
+        //},
 
         // others:
         // `shared/fonts` to `dist/static/fonts`
@@ -198,9 +198,16 @@ module.exports = {
 
         // misc
         // `shared/misc` to `dist/`
+        //{
+        //  from: `${defines.src}/shared/misc`,
+        //  to: `${defines.dist}`
+        //},
+
+        // js
+        // `styles/index.ts` to `dist/assets/js`
         {
-          from: `${defines.src}/shared/misc`,
-          to: `${defines.dist}`
+          from: `${defines.src}/app/index.ts`,
+          to: `${defines.dist}/${defines.assets}/${defines.ts}`
         }
       ]
     })

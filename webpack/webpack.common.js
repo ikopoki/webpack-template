@@ -18,7 +18,7 @@ const isDev = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   entry: {
-    app: `${defines.src}/index.ts`
+    app: `${defines.src}/index.js`
     // another app example:
     // auth: `${defines.src}/_auth/index.ts`
   },
@@ -159,16 +159,16 @@ module.exports = {
     // }),
 
     // or by config (from `webpack-pages.js`):
-    ...pages.map(
-      page =>
-        new HtmlWebpackPlugin({
-          title: page.title,
-          template: defines.public + '/' + page.template,
-          filename: page.filename,
-          // default:
-          favicon: defines.src + '/shared/misc/favicon.ico'
-        })
-    ),
+    // ...pages.map(
+    //   page =>
+    //     new HtmlWebpackPlugin({
+    //       title: page.title,
+    //       template: defines.public + '/' + page.template,
+    //       filename: page.filename,
+    //       // default:
+    //       favicon: defines.src + '/shared/misc/favicon.ico'
+    //     })
+    // ),
 
     // extract css from js / ts files (it's a basic setup to keep css in `css` folder)
     // https://webpack.js.org/plugins/mini-css-extract-plugin/
@@ -202,13 +202,6 @@ module.exports = {
         //  from: `${defines.src}/shared/misc`,
         //  to: `${defines.dist}`
         //},
-
-        // js
-        // `styles/index.ts` to `dist/assets/js`
-        {
-          from: `${defines.src}/app/index.ts`,
-          to: `${defines.dist}/${defines.assets}/${defines.ts}`
-        }
       ]
     })
   ],

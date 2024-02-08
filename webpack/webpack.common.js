@@ -11,7 +11,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 // html support
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
 // helpers:
 // I want one rule for development and production, so I use `isDev` to check the process
 const isDev = process.env.NODE_ENV !== 'production'

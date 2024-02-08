@@ -33,7 +33,7 @@ module.exports = {
 
   // optimization (chunks)
   optimization: {
-    chunkIds: 'named',
+    chunkIds: 'natural',
     mergeDuplicateChunks: true,
 
     splitChunks: {
@@ -128,9 +128,9 @@ module.exports = {
       // fonts
       {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]'
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name].[ext]'
         }
       },
 
